@@ -14,15 +14,17 @@ EntregadorMoto entregador = new EntregadorMoto(
     "Zona Sul"
 );
 
+List<FuncionarioTransporte> funcionarios = new List<FuncionarioTransporte>();
 
-Console.WriteLine("=== MOTORISTA DE CARRETA ===");
+funcionarios.Add(motorista);
+funcionarios.Add(entregador);
 
-motorista.MostrarDetalhes();
-
-
+Console.WriteLine("=== SISTEMA DE LOGÍSTICA ===");
 Console.WriteLine();
 
+foreach (FuncionarioTransporte funcionario in funcionarios)
+{
+    funcionario.MostrarDetalhes();
 
-Console.WriteLine("=== ENTREGADOR DE MOTO ===");
-
-entregador.MostrarDetalhes();
+    Console.WriteLine("---------------------------");
+}
