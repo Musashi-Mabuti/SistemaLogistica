@@ -6,7 +6,6 @@ public class EntregadorMoto : FuncionarioTransporte
 
     public string RegiaoEntrega { get; private set; }
 
-
     public EntregadorMoto(
         string nome,
         string registro,
@@ -17,7 +16,6 @@ public class EntregadorMoto : FuncionarioTransporte
         PlacaMoto = placaMoto;
         RegiaoEntrega = regiaoEntrega;
     }
-
 
     public override void MostrarDetalhes()
     {

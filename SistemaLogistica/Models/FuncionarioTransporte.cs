@@ -6,13 +6,11 @@ public abstract class FuncionarioTransporte
 
     public string Registro { get; private set; }
 
-
     public FuncionarioTransporte(string nome, string registro)
     {
         Nome = nome;
         Registro = registro;
     }
-
 
     public virtual void MostrarDetalhes()
     {

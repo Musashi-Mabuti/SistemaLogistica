@@ -6,7 +6,6 @@ public class MotoristaCarreta : FuncionarioTransporte
 
     public string CategoriaCnh { get; private set; }
 
-
     public MotoristaCarreta(
         string nome,
         string registro,
@@ -17,7 +16,6 @@ public class MotoristaCarreta : FuncionarioTransporte
         PlacaCarreta = placaCarreta;
         CategoriaCnh = categoriaCnh;
     }
-
 
     public override void MostrarDetalhes()
     {
